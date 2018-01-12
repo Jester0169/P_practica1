@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jester.p_praktika.MainActivity">
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Введите слово"
+        android:layout_alignBaseline="@+id/btnSearch"
+        android:layout_alignBottom="@+id/btnSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/btnSelect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:onClick="btnSearch"/>
+    <Button
+        android:id="@+id/btnSelect"
+        android:text="выбрать файл"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="btnSelect"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edit"
+        android:layout_alignStart="@+id/edit"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+    <Button
+        android:id="@+id/btnInsert"
+        android:text="добавить"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnInsert"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_above="@+id/btnSearch"
+        android:layout_toRightOf="@+id/btnSelect"
+        android:layout_toEndOf="@+id/btnSelect" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@+id/btnSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
